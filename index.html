@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<title>Mongo Scraper</title>
+</head>
+<body>
+	<nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Mongo Scraper</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Home</a></li>
+        <li><a href="badges.html">New Articles</a></li>
+        <li><a class="waves-effect waves-light btn">Scrape New Articles!</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="parallax-container">
+  		<h1 id="mongo-header"class="center-header">Mongo Scraper</h1>
+  		<h3 id="nyt-header"class="center-header">New York Times Edition</h3>
+     <div class="parallax"><img src="https://wallpaperscraft.com/image/cup_coffee_newspaper_breakfast_113335_1920x1080.jpg"></div>
+  </div>
+	
+	<ul class="collection with-header">
+		<li class="collection-header"><h4>Article Title</h4></li>
+		<li class="collection-item">Article description</li>
+	</ul>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+      $('.parallax').parallax();
+    });
+	</script>
+
+	<style type="text/css">
+
+		.collection.with-header .collection-header{
+			background-color: #e4bc57;
+			color:#f3f1e5;
+
+		}
+
+		.collection.with-header{
+			margin:20px;
+			border-radius: 13px;
+		}
+
+		header{
+			height:100px;
+		}
+
+		.top-nav{
+			height: 100px;
+		}
+
+		.page-title{
+			line-height: 122px;
+			font-size: 40px
+		}
+
+		.center-header{
+			text-align: center;
+			padding-top:150px;
+		}
+
+		#nyt-header{
+			padding-top: 0px;
+		}
+	</style>
+
+</body>
+</html>
